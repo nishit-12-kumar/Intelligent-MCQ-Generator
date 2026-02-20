@@ -1,0 +1,36 @@
+# Core Language
+python-dotenv==1.0.1
+
+# NLP Libraries
+nltk==3.8.1
+
+# Machine Learning
+scikit-learn==1.4.2
+
+# PDF Handling
+PyPDF2==3.0.1
+
+# Data Handling
+numpy==1.26.4
+pandas==2.2.2
+
+# Backend Framework (Choose one)
+
+flask==3.0.3
+# OR
+fastapi==0.110.2
+uvicorn==0.29.0
+
+# Utilities
+tqdm==4.66.4
+streamlit==1.35.0
+requests==2.31.0
+
+# AI - MCQ Generation
+groq
+
+
+
+
+# Install NLTK data
+# python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('averaged_perceptron_tagger')"
