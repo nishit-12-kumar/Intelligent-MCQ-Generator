@@ -7,6 +7,13 @@ from src.utils.helper import validate_text_input, format_mcq_output
 
 import tempfile
 import os
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng')
+
 
 st.set_page_config(page_title="MCQ Generator", layout="wide")
 
