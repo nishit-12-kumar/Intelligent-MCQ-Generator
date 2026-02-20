@@ -8,7 +8,7 @@ Built with **Python**, **Streamlit**, and **Groq AI**.
 
 ## 🚀 Live Demo
 
-👉 [Click here to try the app](https://intelligent-mcq-generator.streamlit.app)
+👉 [Click here to try the app](https://intelligent-mcq-generator-8nk3icmu88qymuy8n36dxe.streamlit.app/)
 
 ---
 
@@ -18,8 +18,6 @@ Built with **Python**, **Streamlit**, and **Groq AI**.
 - 📑 Generate MCQs from uploaded PDF files
 - 🤖 AI-powered questions using Groq (Llama 3) — not fill-in-the-blank
 - ✅ Interactive quiz interface with instant feedback
-- 🔒 Options lock after submission — answers persist across questions
-- 🎯 Shows correct answer when wrong option is selected
 
 ---
 
@@ -117,45 +115,6 @@ GROQ_API_KEY=your_groq_api_key_here
 ```bash
 streamlit run streamlit_app.py
 ```
-
----
-
-## 📦 Requirements
-
-```
-python-dotenv==1.0.1
-nltk==3.8.1
-PyPDF2==3.0.1
-streamlit==1.35.0
-groq
-requests==2.31.0
-```
-
----
-
-## 🌐 Deploying on Streamlit Cloud
-
-1. Push your code to GitHub (make sure `.env` is in `.gitignore`)
-2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
-3. Click **"New app"** → Select your repo → Set main file as `streamlit_app.py`
-4. Go to **Advanced settings → Secrets** and add:
-```
-GROQ_API_KEY = "your_groq_api_key_here"
-```
-5. Click **Deploy** 🚀
-
----
-
-## 📸 Screenshots
-
-### Text Input
-Enter any paragraph and generate MCQs instantly.
-
-### PDF Upload
-Upload a PDF and generate MCQs from its content.
-
-### Interactive Quiz
-Select an answer, click Submit, and get instant feedback.
 
 ---
 
