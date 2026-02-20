@@ -5,14 +5,27 @@ import string
 import sys
 import nltk
 
+# src/components/text_cleaner.py
+
+import re
+import string
+import sys
+import nltk
+
+# Download required NLTK data
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('averaged_perceptron_tagger', quiet=True)
+nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 from src.logger.logger import logging
 from src.exception.custom_exception import CustomException
 
-
-# Load stopwords once
+# Load stopwords AFTER download
 STOP_WORDS = set(stopwords.words("english"))
 
 
